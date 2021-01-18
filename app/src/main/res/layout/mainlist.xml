@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+
+    android:background="#969D9F"
+    android:id="@+id/main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ListView
+    <!--<ListView
         android:id="@+id/main_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,6 +16,21 @@
         android:layout_marginTop="10dp"
         android:dividerHeight="10dp"
         android:textColor="#000000">
-    </ListView>
+    </ListView>-->
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycler"
+    android:layout_weight="9.0"
+    android:layout_margin="12dp"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:textColor="#000000"/>
 
+    <Button
+        android:layout_gravity="center"
+
+        android:text="Share"
+        android:id="@+id/shareBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
